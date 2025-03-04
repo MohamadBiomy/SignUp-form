@@ -23,12 +23,19 @@ body {
   height: 100vh;
 }
 
+
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 90%;
   gap: 10px;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 75%;
+  }
 }
 
 .heading-box {
@@ -79,6 +86,49 @@ form .inputs {
   padding: 48px;
 }
 
+.inputs div {
+  width: 100%;
+  position: relative;
+}
+
+.inputs div.error::after {
+  content: url("/images/icon-error.svg");
+  position: absolute;
+  top: 25px;
+  right: 22px;
+}
+
+.inputs div.not-valid::after {
+  content: url("/images/icon-error.svg");
+  position: absolute;
+  top: 25px;
+  right: 22px;
+}
+
+.inputs div > p {
+  margin: -20px 0 30px;
+  text-align: right;
+  width: 100%;
+  color: red;
+  display: none;
+}
+
+.inputs div > span {
+  margin: -20px 0 30px;
+  text-align: right;
+  width: 100%;
+  color: red;
+  display: none;
+}
+
+.inputs div.error > p {
+  display: block;
+}
+
+.inputs div.not-valid > span {
+  display: block;
+}
+
 .inputs input {
   width: 100%;
   border: 2px solid var(--grayish-blue);
@@ -98,6 +148,14 @@ form .inputs {
 
 .inputs input:focus {
   border-color: #6055a5;
+}
+
+.inputs div.error input {
+  border: 3px solid var(--red);
+}
+
+.inputs div.not-valid input {
+  border: 3px solid var(--red);
 }
 
 .inputs button {
@@ -125,6 +183,7 @@ form .inputs {
 .text {
   color: var(--grayish-blue);
   font-weight: 500;
+  font-size: 12px;
 }
 
 .text span {

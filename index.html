@@ -25,16 +25,30 @@
           Try it free 7 days
           <span>then $20/mo. thereafter</span>
         </div>
-        <div class="inputs">
-          <input type="text" placeholder="First Name">
-          <input type="text" placeholder="Last Name">
-          <input type="text" placeholder="Email Address">
-          <input type="password" placeholder="Password">
+        <div class="inputs ">
+          <div class="first">
+            <input type="text" placeholder="First Name" name="first">
+            <p>First name cannot be empty</p>
+          </div>
+          <div class="last">
+            <input type="text" placeholder="Last Name" name="last">
+            <p>Last name cannot be empty</p>
+          </div>
+          <div class="email">
+            <input type="text" placeholder="Email Address" name="email">
+            <p>Email cannot be empty</p>
+            <span>Please check your email address</span>
+          </div>
+          <div class="password">
+            <input type="password" placeholder="Password" name="password">
+            <p>Password cannot be empty</p>
+          </div>
           <button>Claim your free trial</button>
-          <div class="text">By clicking the button, you are agreeing to our <span>Terms and Services</span></div>
+          <p class="text">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
         </div>
       </form>
 
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
