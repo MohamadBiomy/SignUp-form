@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/signup-form-solution-c56q1mUwwQ)
+- Live Site URL: [Live site](https://mohamadbiomy.github.io/SignUp-form/)
 
 ## My process
 
